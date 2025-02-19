@@ -1,0 +1,47 @@
+.brands {
+	height: 175px;
+	background: var(--dark);
+	border-radius: 4px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 100px;
+	margin-top: 20px;
+
+	@media screen and (max-width: 1150px) {
+		gap: 50px;
+	}
+
+	@media screen and (max-width: 800px) {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 20px;
+		height: 300px;
+	}
+
+	img {
+		width: 90px;
+		height: 90px;
+		z-index: 1;
+
+		@media screen and (max-width: 900px) {
+			width: 70px;
+			height: 70px;
+		}
+
+		@media screen and (max-width: 800px) {
+			justify-self: center;
+		}
+	}
+
+	.effect {
+		width: 400px;
+		height: 100px;
+		background: var(--light-gray);
+		position: absolute;
+		border-radius: 50%;
+		filter: blur(100px);
+		opacity: 0.4;
+		z-index: 0;
+	}
+}

@@ -1,0 +1,82 @@
+.carparts {
+	width: 100%;
+	margin-top: 20px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap: 5px;
+
+	@media screen and (max-width: 900px) {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	@media screen and (max-width: 550px) {
+		grid-template-columns: 1fr;
+	}
+
+	.part {
+		width: 100%;
+		height: 250px;
+		background-image: url('/assets/parts/parts.jpg');
+		background-repeat: no-repeat;
+		border-radius: 6px;
+		background-size: cover;
+		position: relative;
+		z-index: 0;
+
+		&:hover {
+			transition: all 0.4s;
+			cursor: pointer;
+
+			.dark {
+				opacity: 0.8;
+				transition: all 0.4s;
+			}
+		}
+
+		&.oil {
+			background-image: url('/assets/parts/oil.webp');
+		}
+		&.tools {
+			background-image: url('/assets/parts/tools.webp');
+		}
+		&.lights {
+			background-image: url('/assets/parts/lights.webp');
+		}
+		&.interior {
+			background-image: url('/assets/parts/interior.webp');
+		}
+		&.body {
+			background-image: url('/assets/parts/body.webp');
+		}
+		&.wheels {
+			background-image: url('/assets/parts/wheels.jpg');
+		}
+		&.exterior {
+			background-image: url('/assets/parts/exterior.webp');
+		}
+
+		.dark {
+			width: 100%;
+			height: 100%;
+			background: #000;
+			opacity: 0.6;
+			position: absolute;
+			z-index: -1;
+			top: 0;
+			left: 0;
+			border-radius: 6px;
+			transition: all 0.4s;
+		}
+
+		h1 {
+			z-index: 1;
+			color: var(--white);
+			position: absolute;
+			bottom: 20px;
+			left: 20px;
+			font-size: 21px;
+			font-weight: 300;
+			cursor: pointer;
+		}
+	}
+}
