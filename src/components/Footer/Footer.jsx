@@ -12,7 +12,7 @@ export const Footer = () => {
 				<img src={logo} alt='logo' />
 				<div className={styles.text}>
 					<h1>Автозапчастни</h1>
-					<p>domain.com</p>
+					<p>car-parts-azure.vercel.app</p>
 				</div>
 			</div>
 
