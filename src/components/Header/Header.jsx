@@ -17,7 +17,7 @@ export const Header = ({
 				<img src={logo} alt='logo' />
 				<div className={styles.text}>
 					<h1>Автозапчастини</h1>
-					<p>domain.com</p>
+					<p>car-parts-azure.vercel.app/</p>
 				</div>
 			</div>
 			<div className={styles.nav}>
